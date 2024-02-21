@@ -58,3 +58,9 @@ body {
   transition: color 200ms ease-in-out, transform 200ms ease-in-out;
   user-select: none;
 }
+
+.list-item:hover > .split-text::before,
+.list-item:hover > .split-text::after {
+  color: white;
+  transform: skewX(15deg);
+}
