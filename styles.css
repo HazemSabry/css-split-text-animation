@@ -84,3 +84,7 @@ body {
   z-index: 1;
   transition: transform 200ms ease-in-out;
 }
+
+.list-item:hover::before {
+  transform: scale(1);
+}
