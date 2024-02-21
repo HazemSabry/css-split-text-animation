@@ -1,16 +1,11 @@
 :root {
-  --background-color: linear-gradient(45deg, #02001f, #1f1b4e);
+  --background: linear-gradient(45deg, #02001f, #1f1b4e);
   --text-color: #ff2c75;
-  --line-height: 1;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
 }
 
 body {
-  background: var(--background-color);
+  margin: 0;
+  background: var(--background);
   color: var(--text-color);
   min-height: 100vh;
   display: flex;
@@ -19,17 +14,17 @@ body {
 }
 
 .list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .list-item {
+  position: relative;
   font-weight: bold;
-  font-size: 6rem;
-  text-align: center;
-  line-height: var(--line-height);
-  display: flex;
-  flex-direction: column;
+  font-size: 5rem;
+  margin: 0 auto;
+  width: max-content;
 }
 
 .list-item > .split-text {
