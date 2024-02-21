@@ -39,3 +39,9 @@ body {
   line-height: 1;
   transition: color 0ms 200ms;
 }
+
+.list-item:hover > .split-text {
+  color: transparent;
+  user-select: none;
+  transition-delay: 0ms;
+}
