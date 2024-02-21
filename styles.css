@@ -1,6 +1,7 @@
 :root {
   --background-color: linear-gradient(45deg, #02001f, #1f1b4e);
   --text-color: #ff2c75;
+  --line-height: 1;
 }
 
 * {
@@ -26,4 +27,15 @@ body {
   font-weight: bold;
   font-size: 6rem;
   text-align: center;
+  line-height: var(--line-height);
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item > .split-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  transition: color 0ms 200ms;
 }
