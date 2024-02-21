@@ -45,3 +45,16 @@ body {
   user-select: none;
   transition-delay: 0ms;
 }
+
+.list-item > .split-text::before,
+.list-item > .split-text::after {
+  position: absolute;
+  content: attr(data-text);
+  height: calc(0.5em);
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  color: var(--text-color);
+  transition: color 200ms ease-in-out, transform 200ms ease-in-out;
+  user-select: none;
+}
